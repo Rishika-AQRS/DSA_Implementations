@@ -2,7 +2,6 @@
     Title: Array Insertion
     Author: Rishika
     Description: Program to insert an element into an array at a given position.
-    Date: 15-Aug-2025
     Language: C
 */
 
