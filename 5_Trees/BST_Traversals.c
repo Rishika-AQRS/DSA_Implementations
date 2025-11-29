@@ -67,4 +67,38 @@ void postorder(struct node* root) {
 
 // Main function
 int main() {
-    struct node *root = NULL;*
+    struct node *root = NULL;
+    int n, value;
+
+    printf("Enter the number of nodes: ");
+    scanf("%d", &n);
+
+    printf("Enter the values to insert in the tree: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &value);
+        root = insert(root, value);
+    }
+
+    printf("\nInorder traversal: ");
+    inorder(root);
+
+    printf("\nPreorder traversal: ");
+    preorder(root);
+
+    printf("\nPostorder traversal: ");
+    postorder(root);
+
+    return 0;
+}
+
+/*
+Sample Output:
+
+Enter the number of nodes: 5
+Enter the values to insert in the tree: 50 30 70 20 40
+
+Inorder traversal: 20 30 40 50 70
+Preorder traversal: 50 30 20 40 70
+Postorder traversal: 20 40 30 70 50
+*/
+
