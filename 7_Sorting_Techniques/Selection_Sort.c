@@ -36,3 +36,29 @@ int main() {
     printf("Enter %d elements:\n", n);
     for (i = 0; i < n; i++)
         scanf("%d", &arr[i]);
+
+    printf("\nUnsorted Array: ");
+    for (i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+
+    SelectionSort(arr, n);
+
+    printf("\nSorted Array using Selection Sort: ");
+    for (i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+
+    return 0;
+}
+
+/*
+Sample Input:
+
+Enter the number of elements: 5
+Enter 5 elements:
+64 25 12 22 11
+
+Sample Output:
+
+Unsorted Array: 64 25 12 22 11
+Sorted Array using Selection Sort: 11 12 22 25 64
+*/
